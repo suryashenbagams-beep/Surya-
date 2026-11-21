@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff4a8">
+<title>XX ♡ YYY — Our Story</title>
+<style>
+:root{--pink:#df83a7;--ink:#514b42;--cream:#fff9e7;--lav:#d9b8e8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:#fff4b0}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:42px 20px;position:relative;overflow:hidden;background:
+radial-gradient(ellipse at 15% 25%,rgba(255,255,255,.65),transparent 38%),
+radial-gradient(ellipse at 85% 80%,rgba(238,194,219,.5),transparent 35%),
+linear-gradient(135deg,#fff7a9,#f9e9a2 48%,#fff1e8)}
+.hero:before,.hero:after{content:"♡";position:absolute;color:rgba(171,154,75,.18);font-size:clamp(180px,38vw,440px);line-height:1;pointer-events:none}
+.hero:before{top:-70px;left:-50px;transform:rotate(-22deg)}
+.hero:after{bottom:-110px;right:-30px;transform:rotate(18deg)}
+.hero-inner{position:relative;z-index:1;max-width:720px}
+.date{font:500 clamp(17px,3vw,25px) Arial,sans-serif;letter-spacing:.13em;color:#a18d43}
+.time{font:300 clamp(70px,18vw,150px)/.95 Arial,sans-serif;color:rgba(255,255,255,.72);text-shadow:0 2px 18px #c5b56b}
+.names{font-size:clamp(38px,8vw,76px);color:#c76f98;margin:24px 0 12px}
+.subtitle{font:15px Arial,sans-serif;letter-spacing:.08em}
+.portrait{width:150px;height:150px;border-radius:50%;margin:28px auto 18px;border:5px solid white;box-shadow:0 8px 30px #ad936055;background:linear-gradient(135deg,#f5d8df,#fff2b8);display:grid;place-items:center;font:14px Arial;color:#9c7a84;overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.welcome{max-width:480px;margin:auto;background:#fffdf9;padding:25px 28px;border-radius:20px;box-shadow:0 12px 35px #8f784022}
+.welcome h1{font:500 23px Arial,sans-serif;color:var(--pink);margin:0 0 12px}
+.welcome p{font:15px/1.8 Arial,sans-serif;margin:0}
+.scroll-hint{margin-top:32px;font:12px Arial,sans-serif;letter-spacing:.08em}
+.story{padding:65px 16px 90px;background:linear-gradient(160deg,#fff5bd,#fff1e9 55%,#f9e9c4)}
+.story-head{text-align:center;margin:0 auto 50px;max-width:600px}
+.story-head h2{font-size:34px;color:#c87598;font-weight:normal;margin:0 0 10px}
+.story-head p{font:14px Arial,sans-serif}
+.chapter{max-width:1050px;margin:0 auto 52px;display:grid;grid-template-columns:minmax(150px,260px) minmax(0,1fr);gap:28px;align-items:center}
+.chapter:nth-of-type(odd){grid-template-columns:minmax(0,1fr) minmax(150px,260px)}
+.chapter:nth-of-type(odd) .photo{order:2}
+.photo{min-height:220px;border:2px dashed var(--lav);border-radius:18px;background:#fffaf4;display:grid;place-items:center;overflow:hidden;color:#ad91ad;font:13px Arial,sans-serif;text-align:center;padding:12px}
+.photo img{width:100%;height:100%;min-height:220px;object-fit:cover}
+.card{background:white;border-radius:18px;padding:28px 30px;box-shadow:0 12px 32px #917c3520}
+.kicker{font:11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--pink)}
+.card h3{font:500 23px Arial,sans-serif;margin:8px 0 14px;color:#393735}
+.card p{font:14px/1.9 Arial,sans-serif;color:#716d68;margin:0}
+.end{text-align:center;padding:65px 20px;background:#fff8e8}
+.end .heart{font-size:38px;color:#dc83a7}
+.end h2{font-weight:normal;color:#c87598;font-size:32px}
+.end p{font:15px/1.8 Arial,sans-serif;max-width:560px;margin:auto}
+footer{text-align:center;padding:22px;background:#fff8e8;font:12px Arial,sans-serif;color:#a49a8a}
+@media(max-width:650px){.chapter,.chapter:nth-of-type(odd){grid-template-columns:1fr;gap:16px;margin-bottom:34px}.chapter:nth-of-type(odd) .photo{order:0}.photo{min-height:190px}.photo img{min-height:190px}.card{padding:23px 21px}.story{padding-top:48px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="date">OUR LITTLE FOREVER</div>
+    <div class="time">♡</div>
+    <div class="names">XX <span style="color:#d99ab3">&amp;</span> YYY</div>
+    <div class="subtitle">TWO HEARTS · ONE BEAUTIFUL STORY</div>
+    <div class="portrait"><span>Add your couple photo<br>in <b>images/couple.jpg</b></span></div>
+    <div class="welcome">
+      <h1>Our Story Begins Here ♡</h1>
+      <p>Some stories are written in the stars. This one is ours — a little collection of moments, memories, and all the love in between.</p>
+    </div>
+    <div class="scroll-hint">↓ SCROLL DOWN TO READ OUR STORY ↓</div>
+  </div>
+</header>
+<main class="story">
+  <div class="story-head"><h2>Every Love Has a Story</h2><p>Here's a little look at how our forever began.</p></div>
+  <section class="chapter">
+    <div class="photo"><span>Add a memory photo<br><b>images/chapter1.jpg</b></span></div>
+    <article class="card"><div class="kicker">Chapter One</div><h3>How We Met</h3><p>Every beautiful journey has a beginning. Somewhere between a first hello and a simple conversation, our paths crossed. We didn't know what the future had planned, but that first moment became the start of something special.</p></article>
+  </section>
+  <section class="chapter">
+    <div class="photo"><span>Add a memory photo<br><b>images/chapter2.jpg</b></span></div>
+    <article class="card"><div class="kicker">Chapter Two</div><h3>Becoming Friends</h3><p>Little by little, our conversations grew longer and our smiles came easier. We shared stories, laughter, dreams, and the small details of everyday life. Without even noticing, we became an important part of each other's days.</p></article>
+  </section>
+  <section class="chapter">
+    <div class="photo"><span>Add a memory photo<br><b>images/chapter3.jpg</b></span></div>
+    <article class="card"><div class="kicker">Chapter Three</div><h3>When I Knew</h3><p>There are moments when the heart understands what words cannot explain. In the quiet, ordinary moments, we found trust, care, and a feeling that made everything brighter. That's when forever started to feel possible.</p></article>
+  </section>
+  <section class="chapter">
+    <div class="photo"><span>Add a memory photo<br><b>images/chapter4.jpg</b></span></div>
+    <article class="card"><div class="kicker">Chapter Four</div><h3>Our Beautiful Memories</h3><p>Every picture holds a feeling, every memory has a story, and every step together makes our bond stronger. These are only a few pages of a story we will keep writing together.</p></article>
+  </section>
+</main>
+<section class="end">
+  <div class="heart">♥</div>
+  <h2>To Our Forever, XX &amp; YYY</h2>
+  <p>May our days be filled with kindness, our hearts with laughter, and our journey with a thousand little reasons to choose each other — every single day.</p>
+</section>
+<footer>MADE WITH LOVE · XX ♡ YYY</footer>
+</body>
+</html>
